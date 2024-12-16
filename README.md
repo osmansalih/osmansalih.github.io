@@ -1,2 +1,2 @@
 # osmansalih.github.io
-Personal Website
+Portfolio Website
