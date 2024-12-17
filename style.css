@@ -1,0 +1,174 @@
+html, body {
+    margin: 0;
+    background: linear-gradient(to bottom, #000b2e, #000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #09002b;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #151b64;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2d3488;
+  }
+
+/* Navbar */
+
+
+nav {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0);
+}
+
+nav .nav-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+nav .name {
+    display: flex;
+    flex-direction: row;
+}
+
+nav .name-text {
+    color: #fff;
+    font-weight: bold;
+}
+
+nav .sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav .sections li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #0f90f9;
+    text-decoration: none;
+}
+
+.icon-section {
+    display: flex;
+    align-items: center;
+}
+
+.icon-section a, .icon-section i {
+    color: #fff;
+    margin: 5px;
+    font-size: 20px;
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+.icon-section a:hover, .icon-section i:hover {
+    color: #0f90f9;
+}
+
+.name {
+    list-style: none;
+    cursor: pointer;
+}
+
+/* About Me */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#about {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 20px 20px 100px 20px;
+    color: #fff;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#about .avatar {
+    width: 250px;
+    margin-left: 100px;
+}
+
+#about .myname {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#about .btns-container{
+    margin-top: 30px;
+}
+
+#about .primary-btn {
+    background-color: #0f90f9;
+    padding: 15px 35px;
+    border-radius: 50px;
+    margin-right: 10px;
+    border: 2px #0f90f9 solid;
+    font-weight: bold;
+    transition: background-color 0.5s, border 0.5s ease;
+}
+
+#about .primary-btn:hover {
+    background-color: #fff;
+    border: 2px #fff solid;
+}
+
+#about .secondary-btn {
+    background-color: transparent;
+    color: #0f90f9;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 50px;
+    margin-right: 10px;
+    border: 2px #0f90f9 solid;
+    transition: color 0.5s, border 0.5s ease;
+}
+
+#about .secondary-btn:hover {
+    color: #fff;
+    border: 2px #fff solid;
+}

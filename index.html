@@ -4,10 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Osman Salih</title>
+    <script src="https://kit.fontawesome.com/ea6a26637a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>Osman Salih's Website</h1>
+    <div id="navbar"></div>
+
+    <main>
+        <div class="about-container">
+            <div id="navbar"></div>
+            <section id="about" class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <img src="avatar.png" alt="Osman Salih" class="avatar rounded-circle" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <h1 class="myname">I'm Osman Salih</h1>
+                        <p style="color: #0f90f9;">Full Stack Developer | Cyber Security Expert</p>
+
+                        <div class="btns-container">
+                        <button class="primary-btn">Let's Connect</button>
+                        <button class="secondary-btn">Buy Me a Coffee</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- Services Section -->
+        <section id="services"></section>
+
+        <!-- Contact Section -->
+        <section id="contact"></section>
+    </main>
+
+    <footer></footer>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the navbar:', error));
+    </script>
 </body>
 </html>
